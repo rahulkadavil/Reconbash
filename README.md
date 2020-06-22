@@ -1,4 +1,4 @@
-# recon
+# Recon
 
 Command to Run: $recon domain filename
 This is a simple bash script for Recon.
