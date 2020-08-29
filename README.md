@@ -1,4 +1,4 @@
-# Recon
+# Raccoon: recon script 
 
 Command to Run: $recon domain filename.<br/> 
 This is a simple bash script for Recon.<br/>
