@@ -1,6 +1,6 @@
 # ~/.profile: executed by Bourne-compatible login shells.
 
-recon(){
+raccoon(){
 
 	assetfinder --subs-only $1 | tee asset_$2
 	python ~/Sublist3r/sublist3r.py -d $1 -o sub_$2
