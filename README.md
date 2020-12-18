@@ -11,3 +11,4 @@ Thanks @tomnomnom and @aboul3la for this awesome tool.<br/>
 Open the bash_profile file using vim or text editor (Example: vi ~/.bash_profile).<br/>
 Copy paste the code and save it.<br/>
 And run $source ~/.bash_profile in terminal.<br/> 
+raccon domain.com filename
