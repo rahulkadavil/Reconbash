@@ -1,14 +1,15 @@
 # ~/.profile: executed by Bourne-compatible login shells.
-
+# Create files such as alive hosts, all subdomains
 raccoon(){
 
-	assetfinder --subs-only $1 | tee asset_$2
-	python ~/Sublist3r/sublist3r.py -d $1 -o sub_$2
-	cat asset_$2 sub_$2 >> all_$2 | sort -u all_$2 | tee domain_$2
-	dig txt -f domain_$2 | tee dns_$2
-	cat domain_$2 | httprobe | tee livehost_$2
-	cat livehost_$2 | aquatone
-	meg -d 1000 -v / host_$2 ./index_$2
+	assetfinder --subs-only $1 | tee subdomain1_$2
+	python ~/Sublist3r/sublist3r.py -d $1 -o subdomain2_$2
+	cat subdomain1_$2 subdomain1_$2 >> domains_$2 | sort -u domains_$2 | tee alldomain_$2
+	rem subdomain1_$2 subdomain1_$2 domain_$2
+	dig txt -f alldomain_$2 | tee dns_$2
+	cat domain_$2 | httprobe | tee alivehost_$2
+	cat alivehost_$2 | aquatone
+	meg -d 1000 -v / alivehost_$2 ./index_$2
 
 }
 
