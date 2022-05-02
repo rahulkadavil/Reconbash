@@ -9,6 +9,7 @@ raccoon(){
 	cat $2_alldomain  | httprobe | tee $2_alivehost
 	cat $2_alivehost | aquatone
 	meg -d 1000 -v / $2_alivehost ./$2_spider
+	cat $2_alivehost | gau --threads 5
 
 }
 
