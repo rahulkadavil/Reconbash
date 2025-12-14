@@ -1,4 +1,4 @@
-# Raccoon: Recon Bash Script 
+# Reconbash: Recon Bash Script 
 
 Command to Run: ``` raccoon domain filename ``` .<br/> 
 
